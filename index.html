@@ -11,15 +11,16 @@
 <body>
     <h1>Seat Selector</h1>
 
+    <div class="movie-list">
+        <label for="movieSelect">Select a Movie:</label>
+        <select id="movieSelect" onchange="changeMovie()">
+            <option value="movie1">Trolls band Together</option>
+            <option value="movie2">Trolls Holiday</option>
+            <option value="movie3">Trolls Tour</option>
+        </select>
+    </div>
+
     <div class="container">
-        <div class="movie-list">
-            <label for="movieSelect">Select a Movie:</label>
-            <select id="movieSelect" onchange="changeMovie()">
-                <option value="movie1">Trolls band Together</option>
-                <option value="movie2">Trolls Holiday</option>
-                <option value="movie3">Trolls Tour</option>
-            </select>
-        </div>
 
         <div class="seat-map" id="seatMapContainer"></div>
 
@@ -27,7 +28,7 @@
             <div class="legend" id="legend"></div>
 
             <div class="guide">
-                <div class="yes">Available</div>
+                <div class="yes">Selected</div>
                 <br>
                 <div class="no">Booked</div>
                 <br>
